@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #e76b4f, #766bba);
+    color: #fff;
+    margin: 80px auto;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 20px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 70%;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.weather-icon {
+    width: 150px;
+    margin-top: 20px;
+}
+
+.weather h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 8px;
+    flex: 1; /* Makes columns flexible */
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.col img {
+    width: 35px;
+    margin-right: 8px;
+}
+
+.humidity, .wind {
+    font-size: 24px;
+    margin-top: -4px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* ✅ RESPONSIVE DESIGN FOR TABLETS AND SMALLER SCREENS */
+@media (max-width: 768px) {
+    .card {
+        width: 95%;
+        padding: 30px 20px;
+        margin: 60px auto;
+    }
+
+    .search input {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .search button {
+        width: 45px;
+        height: 45px;
+    }
+
+    .weather-icon {
+        width: 120px;
+    }
+
+    .weather h1 {
+        font-size: 50px;
+    }
+
+    .weather h2 {
+        font-size: 30px;
+    }
+
+    .details {
+        padding: 0 5px;
+        margin-top: 20px;
+    }
+
+    .col img {
+        width: 30px;
+    }
+
+    .humidity, .wind {
+        font-size: 20px;
+    }
+}
+
+/* ✅ RESPONSIVE DESIGN FOR MOBILE DEVICES */
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        padding: 20px;
+        margin: 40px auto;
+        border-radius: 15px;
+    }
+
+    .search {
+        flex-direction: column;
+    }
+
+    .search input {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .search button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .weather-icon {
+        width: 100px;
+    }
+
+    .weather h1 {
+        font-size: 40px;
+    }
+
+    .weather h2 {
+        font-size: 25px;
+    }
+
+    .details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .col {
+        justify-content: center;
+    }
+
+    .col img {
+        width: 25px;
+    }
+
+    .humidity, .wind {
+        font-size: 18px;
+    }
+}
